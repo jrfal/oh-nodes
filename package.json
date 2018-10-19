@@ -1,0 +1,39 @@
+{
+  "name": "oh-nodes",
+  "version": "0.0.1",
+  "description": "Node-based music composer",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 3636",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrfal/oh-nodes.git"
+  },
+  "author": "jefffal@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrfal/oh-nodes/issues"
+  },
+  "homepage": "https://github.com/jrfal/oh-nodes#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.10.3",
+    "polished": "^2.2.0",
+    "react": "^16.5.2",
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^5.0.1",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "styled-components": "^3.4.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
