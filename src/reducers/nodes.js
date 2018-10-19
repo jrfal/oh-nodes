@@ -29,9 +29,10 @@ const nodes = (state = { nodes: [], nextId: 1 }, action) => {
                 nextId: state.nextId + 1
             };
         case actionTypes.SELECT_NODE:
+            const unselectedNodes = state.nodes.map(node => (node.selected ? deselectedNode(node) : node))
             return {
                 ...state,
-                nodes: [...withoutNode(state.nodes, action.id), {...getNode(state.nodes, action.id), selected: true}]
+                nodes: [...withoutNode(unselectedNodes, action.id), {...getNode(unselectedNodes, action.id), selected: true}]
             }
         case actionTypes.DESELECT_ALL:
             return {
